@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         android.support.v4.app.Fragment fragment;
 
         if(i==0) {
+            
+            Toast.makeText(MainActivity.this, "i==0 is selected",
+   Toast.LENGTH_LONG).show();
 
             fragment = new MarufFragment();
             FragmentManager fragmentManager = getSupportFragmentManager();
@@ -43,6 +46,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
 
             else if (i == 1) {
+                
+                Toast.makeText(MainActivity.this, "i==1 is selected",
+   Toast.LENGTH_LONG).show();
 
             fragment = new SaadFragment();
             FragmentManager fragmentManager = getSupportFragmentManager();
@@ -51,6 +57,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             fragmentTransaction.commit();
 
 
+        }
+        else {
+        
+        Toast.makeText(MainActivity.this, "nothing is selected",
+   Toast.LENGTH_LONG).show();
         }
 
 
